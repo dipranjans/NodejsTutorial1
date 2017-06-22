@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%=title%></title>
+<link rel='stylesheet' href='/styles/styles.css' />
+
+</head>
+<body>
+<% include partials/nav.ejs %>
+
+<h1>Thanks for submitting the form!</h1>
+
+<div class="container">   
+  <p><%=contactdata.fname%></p>
+  <p><%=contactdata.email%></p>
+  <p><%=contactdata.phone%></p>
+  <p><%=contactdata.url%></p>
+  <p><%=contactdata.message%></p> 
+</div>
+
+</body>
+</html>

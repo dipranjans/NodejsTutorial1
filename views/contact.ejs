@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%=title%></title>
+<link rel='stylesheet' href='/styles/styles.css' />
+<link rel='stylesheet' href='/styles/contactform.css' />
+</head>
+<body>
+<% include partials/nav.ejs %>
+
+<h3><%=data%></h3>
+
+<div class="container">  
+  <form id="contact" action="/contact-success" method="post">
+    <h3>Contact Form</h3>
+    <h4>Contact us for custom quote</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" name="fname" value="" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" name="email" value="" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" name="phone" value="phone" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site (optional)" type="url" name="url" value="" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5"  name="message" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>    
+  </form>
+</div>
+
+</body>
+</html>
